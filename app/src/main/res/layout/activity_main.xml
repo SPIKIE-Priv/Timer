@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="jp.techacademy.rie.kawagoe.timer.MainActivity">
+
+    <TextView
+        android:id="@+id/timer"
+        android:textSize="60sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="スタート"
+        app:layout_constraintTop_toBottomOf="@+id/timer"
+        app:layout_constraintRight_toLeftOf="@+id/pause_button"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <Button
+        android:id="@+id/pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一時停止"
+        app:layout_constraintTop_toBottomOf="@+id/timer"
+        app:layout_constraintLeft_toRightOf="@+id/start_button"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="リセット"
+        app:layout_constraintTop_toBottomOf="@+id/timer"
+        app:layout_constraintLeft_toRightOf="@+id/pause_button"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+
+</android.support.constraint.ConstraintLayout>
